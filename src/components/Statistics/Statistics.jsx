@@ -1,5 +1,6 @@
 import {  StatisticList,Title,Wrapper, } from "./Statistics.styled";
 import { Element } from "../Element/Element";
+import PropTypes from 'prop-types';
 
 export const StatisticsList = ({stats})=>{
     return (
@@ -20,3 +21,9 @@ export const StatisticsList = ({stats})=>{
         </Wrapper>
   );
 };
+
+StatisticsList.propTypes = {
+  id:PropTypes.string.isRequired,
+  label:PropTypes.string.isRequired,
+  percentage:PropTypes.number.isRequired,
+}

@@ -1,4 +1,6 @@
-import {El} from "./Element.styled"
+import PropTypes from 'prop-types';
+import { El } from "./Element.styled";
+
 export const Element = ({ label, percentage }) => {
     return (
         <El>
@@ -7,3 +9,8 @@ export const Element = ({ label, percentage }) => {
         </El>
     );
 };
+
+Element.propTepes = {
+    label:PropTypes.string.isRequired,
+    percentage:PropTypes.string.isRequired,
+}
