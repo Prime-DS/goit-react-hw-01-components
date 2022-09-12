@@ -1,6 +1,6 @@
 import {Card} from 'components/Card/Card'
 import css from "./CardsBoard.module.css";
-
+import PropTypes from 'prop-types';
 export const CardsBoard = ({ cards }) => {
     return (
         <div className={css.cardsBoard}>
@@ -11,3 +11,6 @@ export const CardsBoard = ({ cards }) => {
         </div>
     );
 };
+CardsBoard.propTypes = {
+   cards:PropTypes.object.isRequired,
+}
